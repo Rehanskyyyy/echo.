@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* @font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('/fonts/helvetica-now/HelveticaNowDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('../public/fonts/helvetica-now/HelveticaNowDisplay-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Helvetica Now Display', Arial, Helvetica, sans-serif;
+}
+
+/* Minimal dark theme scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #232323;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+body::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #232323 transparent;
+}
