@@ -25,7 +25,7 @@ const Signup = () => {
   return (
     <>
       {/* Particle Background */}
-      <div className="fixed inset-0 z-0 pointer-events-auto">
+      <div className="fixed inset-0 z-[-1] bg-black">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
           particleCount={250}

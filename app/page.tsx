@@ -170,11 +170,11 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between relative w-full">
 
             {/* Footer Text */}
-            <footer className="text-[11px] sm:text-sm text-zinc-800 bg-white px-4 py-1 rounded-md sm:rounded-full sm:static absolute left-0 bottom-0">
+            <footer className="text-[13px] sm:text-sm text-zinc-800 bg-white px-2 sm:px-4 py-[2px] rounded-md sm:rounded-full sm:static absolute left-0 bottom-0">
               <span>© echo.</span>
               <span className="hidden sm:inline"> | </span>
               <span className="sm:inline block">
-                You&apos;re lookin&apos; at <a target="_blank" href="https://x.com/Rehanskyyyy" className="underline">Rehan&apos;s</a> work
+                You're lookin' at <a target="_blank" href="https://x.com/Rehanskyyyy" className="underline">Rehan's</a> work
               </span>
             </footer>
 
@@ -182,12 +182,12 @@ export default function Home() {
             <button
               onClick={handleLogout}
               disabled={loggingOut}
-              className="text-xs sm:text-sm px-4 py-2 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center gap-2 disabled:opacity-60 sm:static absolute right-0 bottom-0"
+              className="text-sm sm:text-sm px-4 py-2 rounded-full bg-red-600 hover:bg-red-700 text-white flex items-center gap-2 disabled:opacity-60 sm:static absolute right-0 bottom-0"
             >
               {loggingOut && (
                 <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
               )}
-              {loggingOut ? "Logging out..." : "Logout"}
+              {loggingOut ? "Logging out" : "Logout"}
             </button>
 
           </div>
