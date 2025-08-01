@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <>
       <div className="absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-      <div className="h-screen w-full text-white relative overflow-hidden">
+      <div className="h-[100dvh] w-full text-white relative overflow-hidden">
 
         {/* Fixed Top Left Logo */}
         <h1 className="fixed z-10 top-6 left-6 text-5xl text-white tracking-tight">echo.</h1>
@@ -174,7 +174,7 @@ export default function Home() {
               <span>© echo.</span>
               <span className="hidden sm:inline"> | </span>
               <span className="sm:inline block">
-                You're lookin' at <a target="_blank" href="https://x.com/Rehanskyyyy" className="underline">Rehan's</a> work
+                You&apos;re lookin&apos; at <a target="_blank" href="https://x.com/Rehanskyyyy" className="underline">Rehan&apos;s</a> work
               </span>
             </footer>
 

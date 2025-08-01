@@ -39,16 +39,17 @@ const Signup = () => {
       </div>
 
       {/* Page Content */}
-      <div className="relative z-10 h-screen w-screen">
+      <div className="relative z-10 h-[100dvh] w-screen flex flex-col">
         {/* Top-left echo */}
         <h1 className="absolute top-6 left-6 text-5xl text-white tracking-tight">echo.</h1>
 
         {/* Centered signup content */}
-        <div className="min-h-screen flex flex-col">
+        <div className="flex-1 flex flex-col">
           {/* Content Section */}
-          <main className="flex-1 flex flex-col items-center justify-center">
+          <div className="flex-1 flex flex-col items-center justify-center">
             <p className="text-white text-4xl mb-5">Sign Up</p>
             <div className="space-y-4">
+
               {/* Google Sign In */}
               <button
                 onClick={() => handleSignIn("google")}
@@ -77,12 +78,12 @@ const Signup = () => {
                 {loadingProvider === "github" ? "Signing in..." : "Continue with GitHub"}
               </button>
             </div>
-          </main>
+          </div>
 
           {/* Sticky Footer */}
           <div className="flex justify-center items-end px-4">
-            <footer className="w-full sm:w-auto bg-white text-zinc-800 px-7 py-1 rounded-full mb-4 text-center sm:text-base">
-              © echo. | You're lookin' at <a target="_blank" href="https://www.instagram.com/rehanskyyyy" className="underline">Rehan's</a> work
+            <footer className="mt-auto w-full sm:w-auto bg-white text-zinc-800 px-7 py-1 rounded-full mb-4 text-center sm:text-base">
+              © echo. | You're lookin' at <a target="_blank" href="https://x.com/Rehanskyyyy" className="underline">Rehan's</a> work
             </footer>
           </div>
         </div>
